@@ -1,11 +1,451 @@
+<html>
+    <head>
+        <style>
+        @gray-darker:               #444444;
+        @gray-dark:                 #696969;
+        @gray:                      #999999;
+        @gray-light:                #cccccc;
+        @gray-lighter:              #ececec;
+        @gray-lightest:             lighten(@gray-lighter,4%);
 
-        <html>
-        <head><title>Animals</title></head>
-        <body>
-            <h1>Results for 'Unicorn'</h1>
-            <h2 style="color: red; text-align: center;">
-                Sorry, no data found for the animal 'Unicorn'. Please try another animal!
-            </h2>
-        </body>
-        </html>
-        
+
+        html {
+          background-color: #ffe9e9;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40pt;
+            font-weight: normal;
+        }
+
+        body {
+          font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          letter-spacing: 0;
+          padding: 1rem;
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          -moz-font-feature-settings: "liga" on;
+          width: 900px;
+          margin: auto;
+        }
+
+        .cards {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        .cards__item {
+          background-color: white;
+          border-radius: 0.25rem;
+          box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+          overflow: hidden;
+          padding: 1rem;
+          margin: 50px;
+        }
+
+        .card__title {
+          color: @gray-dark;
+          font-size: 1.25rem;
+          font-weight: 300;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+        }
+
+        .card__text {
+          flex: 1 1 auto;
+          font-size: 0.95rem;
+          line-height: 2;
+          margin-bottom: 1.25rem;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>My Animal Repository</h1>
+        <ul class="cards">
+            <li class="cards__item">
+  <div class="card__title">Australian Cattle Dog</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Omnivore</li>
+      <li><strong>Location:</strong> Oceania</li>
+      <li><strong>Type:</strong> Unknown</li>
+      <li><strong>Name of young:</strong> Unknown</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Hair</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Banjo Catfish</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Carnivore</li>
+      <li><strong>Location:</strong> South-America</li>
+      <li><strong>Type:</strong> Unknown</li>
+      <li><strong>Name of young:</strong> Unknown</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Unknown</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Blue Catfish</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Omnivore</li>
+      <li><strong>Location:</strong> Central-America, North-America</li>
+      <li><strong>Type:</strong> Fish</li>
+      <li><strong>Name of young:</strong> Unknown</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Scales</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Bobcat</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Carnivore</li>
+      <li><strong>Location:</strong> Central-America, North-America</li>
+      <li><strong>Type:</strong> Unknown</li>
+      <li><strong>Name of young:</strong> Kitten</li>
+      <li><strong>Lifestyle:</strong> Nocturnal/Crepuscular</li>
+      <li><strong>Skin type:</strong> Fur</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Cat-Eyed Snake</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Carnivore</li>
+      <li><strong>Location:</strong> Central-America, North-America, South-America</li>
+      <li><strong>Type:</strong> Unknown</li>
+      <li><strong>Name of young:</strong> Unknown</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Scales</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Catahoula Leopard</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Omnivore</li>
+      <li><strong>Location:</strong> North-America</li>
+      <li><strong>Type:</strong> Unknown</li>
+      <li><strong>Name of young:</strong> Puppy</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Hair</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Catalan Sheepdog</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Omnivore</li>
+      <li><strong>Location:</strong> Europe</li>
+      <li><strong>Type:</strong> Unknown</li>
+      <li><strong>Name of young:</strong> Puppy</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Unknown</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Caterpillar</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Herbivore</li>
+      <li><strong>Location:</strong> Africa, Asia, Central-America, Eurasia, Europe, North-America, Oceania, South-America</li>
+      <li><strong>Type:</strong> Unknown</li>
+      <li><strong>Name of young:</strong> Unknown</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Hair</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Catfish</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Carnivore</li>
+      <li><strong>Location:</strong> Africa, Asia, Central-America, Eurasia, Europe, North-America, Ocean, Oceania, South-America</li>
+      <li><strong>Type:</strong> Unknown</li>
+      <li><strong>Name of young:</strong> Unknown</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Scales</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Corn Rex Cat (Cornish Rex)</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Omnivore</li>
+      <li><strong>Location:</strong> Europe</li>
+      <li><strong>Type:</strong> Unknown</li>
+      <li><strong>Name of young:</strong> Unknown</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Unknown</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Electric Catfish</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Carnivore</li>
+      <li><strong>Location:</strong> Africa</li>
+      <li><strong>Type:</strong> Ray-finned fish</li>
+      <li><strong>Name of young:</strong> Unknown</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Skin</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">European Polecat</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Carnivore</li>
+      <li><strong>Location:</strong> Africa, Eurasia, Europe</li>
+      <li><strong>Type:</strong> Mustelid</li>
+      <li><strong>Name of young:</strong> kit</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Fur</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">European Wildcat</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Omnivore</li>
+      <li><strong>Location:</strong> Europe</li>
+      <li><strong>Type:</strong> Unknown</li>
+      <li><strong>Name of young:</strong> kitten</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Unknown</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Fisher Cat</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Omnivore</li>
+      <li><strong>Location:</strong> North-America</li>
+      <li><strong>Type:</strong> Mammal</li>
+      <li><strong>Name of young:</strong> Kits</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Fur</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Fishing Cat</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Carnivore</li>
+      <li><strong>Location:</strong> Asia</li>
+      <li><strong>Type:</strong> Unknown</li>
+      <li><strong>Name of young:</strong> Kitten</li>
+      <li><strong>Lifestyle:</strong> Nocturnal</li>
+      <li><strong>Skin type:</strong> Fur</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Ghost Catfish</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Carnivore</li>
+      <li><strong>Location:</strong> Asia</li>
+      <li><strong>Type:</strong> Siluriformes</li>
+      <li><strong>Name of young:</strong> Unknown</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Scales</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Great Crested Flycatcher</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Omnivore</li>
+      <li><strong>Location:</strong> Central-America, North-America, South-America</li>
+      <li><strong>Type:</strong> Bird</li>
+      <li><strong>Name of young:</strong> Unknown</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Unknown</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Hardhead Catfish</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Omnivore</li>
+      <li><strong>Location:</strong> Ocean</li>
+      <li><strong>Type:</strong> ray-finned fish</li>
+      <li><strong>Name of young:</strong> Unknown</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Skin</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Highland Cattle</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Herbivore</li>
+      <li><strong>Location:</strong> Europe, North-America, Oceania</li>
+      <li><strong>Type:</strong> Mammal</li>
+      <li><strong>Name of young:</strong> Unknown</li>
+      <li><strong>Lifestyle:</strong> Herd</li>
+      <li><strong>Skin type:</strong> Hair</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Jaguarundi Cat</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Carnivore</li>
+      <li><strong>Location:</strong> Central-America, South-America</li>
+      <li><strong>Type:</strong> Mammal</li>
+      <li><strong>Name of young:</strong> Kitten</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Hair</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Leopard Cat</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Carnivore</li>
+      <li><strong>Location:</strong> Asia</li>
+      <li><strong>Type:</strong> Mammal</li>
+      <li><strong>Name of young:</strong> Unknown</li>
+      <li><strong>Lifestyle:</strong> Solitary</li>
+      <li><strong>Skin type:</strong> Fur</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Mekong Giant Catfish</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Herbivore</li>
+      <li><strong>Location:</strong> Asia</li>
+      <li><strong>Type:</strong>  Ray-finned fish</li>
+      <li><strong>Name of young:</strong> Unknown</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Skin</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Polecat</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Carnivore</li>
+      <li><strong>Location:</strong> Africa, Asia, Europe, North-America</li>
+      <li><strong>Type:</strong> Mammal</li>
+      <li><strong>Name of young:</strong> Kit</li>
+      <li><strong>Lifestyle:</strong> Solitary</li>
+      <li><strong>Skin type:</strong> Hair</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Redtail Catfish</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Carnivore</li>
+      <li><strong>Location:</strong> South-America</li>
+      <li><strong>Type:</strong> Fish</li>
+      <li><strong>Name of young:</strong> Unknown</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Scales</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Sulcata Tortoise</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Herbivore</li>
+      <li><strong>Location:</strong> Africa</li>
+      <li><strong>Type:</strong> Reptile</li>
+      <li><strong>Name of young:</strong> Hatchling</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Hard Shell</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Walking Catfish</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Omnivore</li>
+      <li><strong>Location:</strong> Asia</li>
+      <li><strong>Type:</strong> Fish</li>
+      <li><strong>Name of young:</strong> Unknown</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Skin</li>
+    </ul>
+  </p>
+</li>
+<li class="cards__item">
+  <div class="card__title">Wels Catfish</div>
+  <p class="card__text">
+    <ul class="animal-info">
+      <li><strong>Scientific name:</strong> Unknown</li>
+      <li><strong>Diet:</strong> Omnivore</li>
+      <li><strong>Location:</strong> Europe</li>
+      <li><strong>Type:</strong> ray-finned fish</li>
+      <li><strong>Name of young:</strong> Unknown</li>
+      <li><strong>Lifestyle:</strong> Unknown</li>
+      <li><strong>Skin type:</strong> Unknown</li>
+    </ul>
+  </p>
+</li>
+
+        </ul>
+    </body>
+</html>
